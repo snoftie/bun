@@ -1,0 +1,115 @@
+<style>
+  :root {
+    --bg-color: #E8EAFF;
+    --border-color: #FFFFF3;
+    --bunny-color1: #444177;
+    --bunny-color2: #FFFFF3;
+    --blush-color: #FFF2F2
+  }
+
+  body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  .nose {
+    position: absolute;
+    top: 230px;
+    height: 10px;
+    width: 20px;
+    background-color: var(--bunny-color1);
+    border-radius: 50% 50% 50% 50% / 30% 30% 80% 80%;
+
+  }
+
+  .mouth {}
+
+  .blush1 {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    right: 280px;
+    top: 215px;
+    border: 3px solid var(--blush-color);
+    border-radius: 50%;
+    background-color: var(--blush-color);
+
+  }
+
+  .blush2 {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    right: 400px;
+    top: 215px;
+    border: 3px solid var(--blush-color);
+    border-radius: 50%;
+    background-color: var(--blush-color);
+
+  }
+
+  .ear1 {
+    position: absolute;
+    width: 70px;
+    height: 200px;
+    right: 260px;
+    border: 3px solid var(--border-color);
+    border-radius: 50%;
+    background-color: var(--bunny-color2);
+  }
+
+  .ear2 {
+    position: absolute;
+    width: 70px;
+    height: 200px;
+    right: 410px;
+    border: 3px solid var(--border-color);
+    border-radius: 50%;
+    background-color: var(--bunny-color2);
+  }
+
+  .bunny {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 120px;
+    border: 3px solid var(--border-color);
+    border-radius: 50%;
+    background-color: var(--bunny-color2);
+  }
+
+  .bunny::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 35px;
+    z-index: 2;
+    width: 20px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--bunny-color1);
+  }
+
+  .bunny::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 145px;
+    z-index: 1;
+    width: 20px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--bunny-color1);
+  }
+</style>
+
+<div class="bunny"></div>
+<div class="ear1"></div>
+<div class="ear2"></div>
+<div class="nose"></div>
+<div class="blush1"></div>
+<div class="blush2"></div>
+<div class="mouth"></div>
+
+</div>
