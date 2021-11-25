@@ -12,75 +12,14 @@
     display: flex;
     justify-content: center;
   }
-
-  .nose {
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: 61%;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid var(--bunny-color1);
-    border-radius: 50% 50% 50% 50% / 50% 50% 70% 70%;
-
-  }
-
-  .mouth {}
-
-  .blush1 {
-    position: absolute;
-    width: 50px;
-    height: 20px;
-    right: 280px;
-    border: 3px solid var(--blush-color);
-    border-radius: 50%;
-    top: 61%;
-    background-color: var(--blush-color);
-
-  }
-
-  .blush2 {
-    position: absolute;
-    width: 50px;
-    height: 20px;
-    right: 400px;
-    top: 61%;
-    border: 3px solid var(--blush-color);
-    border-radius: 50%;
-    background-color: var(--blush-color);
-
-  }
-
-  .ear1 {
-    position: absolute;
-    width: 70px;
-    height: 200px;
-    right: 260px;
-    top: 35%;
-    border: 3px solid var(--border-color);
-    border-radius: 50%;
-    background-color: var(--bunny-color2);
-  }
-
-  .ear2 {
-    position: absolute;
-    width: 70px;
-    height: 200px;
-    right: 410px;
-    top: 35%;
-    border: 3px solid var(--border-color);
-    border-radius: 50%;
-    background-color: var(--bunny-color2);
-  }
-
-  .bunny {
-    position: absolute;
+    .bunny {
     width: 200px;
     height: 200px;
     top: 50%;
     border: 3px solid var(--border-color);
     border-radius: 50%;
     background-color: var(--bunny-color2);
+    position: relative;
 
   }
 
@@ -108,27 +47,89 @@
     background-color: var(--bunny-color1);
 
   }
+  
+  .nose {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 45%;
+    left: 45%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--bunny-color1);
+    border-radius: 50% 50% 50% 50% / 50% 50% 70% 70%;
 
-  .circle {
+  }
+
+
+
+  .blush1 {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    top: 50%;
+    border: 3px solid var(--blush-color);
+    border-radius: 50%;
+    
+    background-color: var(--blush-color);
+
+  }
+
+  .blush2 {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    right: 1%;
+    top: 50%;
+    border: 3px solid var(--blush-color);
+    border-radius: 50%;
+    background-color: var(--blush-color);
+
+  }
+
+  .ear1 {
+    position: absolute;
+    width: 70px;
+    height: 200px;
+    left: 60%;
+    bottom: 50%;
+    border: 3px solid var(--border-color);
+    border-radius: 50%;
+    background-color: var(--bunny-color2);
+  }
+
+  .ear2 {
+    position: absolute;
+    width: 70px;
+    height: 200px;
+    
+    bottom: 50%;
+    border: 3px solid var(--border-color);
+    border-radius: 50%;
+    background-color: var(--bunny-color2);
+  }
+
+
+    .circle {
     position: absolute;
     width: 400px;
     height: 400px;
-    top: 265px;
-
+    top: 33%;
     border: 2px solid var(--blush-color);
     border-radius: 50%;
 
     background-color: solid transparent;
 
   }
-</style>
 
-<div class="bunny"></div>
-<div class="ear1"></div>
-<div class="ear2"></div>
-<div class="nose"></div>
-<div class="blush1"></div>
-<div class="blush2"></div>
-<div class="mouth"></div>
+</style>
+<div class="bunny">
+  <div class="ear1"></div>
+  <div class="ear2"></div>
+  <div class="nose"></div>
+  <div class="blush1"></div>
+  <div class="blush2"></div>
+  <div class="moon"></div>
+
+</div>
 <div class="circle"></div>
-<div class="moon"></div>
