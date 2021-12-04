@@ -39,13 +39,12 @@
     height: 26px;
     border-radius: 50%;
     background-color: var(--bunny-color1);
-
-  }
-
-  .bunny:hover::before {
     animation: blinking 1.5s ease-in-out forwards;
     animation-iteration-count: infinite;
+
   }
+
+  
 
   .bunny::after {
     content: "";
@@ -57,16 +56,12 @@
     height: 26px;
     border-radius: 50%;
     background-color: var(--bunny-color1);
-
-
-  }
-
-  .bunny:hover::after {
-
     animation: blinking 1.5s ease-in-out forwards;
     animation-iteration-count: infinite;
 
   }
+
+  
 
   .nose {
     position: absolute;
@@ -116,9 +111,13 @@
     border: 3px solid var(--border-color);
     border-radius: 50%;
     background-color: var(--bunny-color2);
-    animation: wiggle1 2s ease-in-out;
+   
+  }
+  .bunny:hover > .ear1 {
+     animation: wiggle1 2s ease-in-out;
     animation-iteration-count: infinite;
   }
+  
 
   .ear2 {
     position: absolute;
@@ -129,11 +128,14 @@
     border: 3px solid var(--border-color);
     border-radius: 50%;
     background-color: var(--bunny-color2);
-    animation: wiggle2 2s ease-in-out;
-    animation-iteration-count: infinite;
+    
 
   }
-
+  .bunny:hover > .ear2 {
+    animation: wiggle2 2s ease-in-out;
+    animation-iteration-count: infinite;
+    
+  }
   .star1 {
     position: absolute;
     margin: auto;
