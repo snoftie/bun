@@ -4,7 +4,10 @@
     --border-color: #FFFFF3;
     --bunny-color1: #444177;
     --bunny-color2: #FFFFF3;
-    --blush-color: #FFF2F2
+    --blush-color: #FFF2F2;
+    --day-color: #DCFEFF;
+    --sunset-color: #FF9FB1;
+    --star-color: #FFFFFF;
   }
 
   body {
@@ -12,6 +15,7 @@
     display: flex;
     justify-content: center;
     height: 100vh;
+    
   }
     .bunny {
     width: 200px;
@@ -34,6 +38,11 @@
     height: 26px;
     border-radius: 50%;
     background-color: var(--bunny-color1);
+   
+  }
+  .bunny:hover::before{
+     animation: blinking 1.5s ease-in-out forwards;
+    animation-iteration-count: infinite;
   }
 
   .bunny::after {
@@ -46,7 +55,15 @@
     height: 26px;
     border-radius: 50%;
     background-color: var(--bunny-color1);
+   
 
+  }
+  .bunny:hover::after 
+  {
+    
+     animation: blinking 1.5s ease-in-out forwards;
+    animation-iteration-count: infinite;
+    
   }
   
   .nose {
@@ -97,40 +114,411 @@
     border: 3px solid var(--border-color);
     border-radius: 50%;
     background-color: var(--bunny-color2);
+    animation: wiggle1 2s ease-in-out;
+    animation-iteration-count: infinite;
   }
 
   .ear2 {
     position: absolute;
     width: 70px;
     height: 200px;
-    
+    right: 60%;
     bottom: 50%;
     border: 3px solid var(--border-color);
     border-radius: 50%;
     background-color: var(--bunny-color2);
+    animation: wiggle2 2s ease-in-out;
+    animation-iteration-count: infinite;
+    
+  }
+  
+  .star1 {
+    position: absolute;
+				margin: auto;
+				left: 33%;
+        top: 50px;
+				width: 6px;
+				height: 6px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+    .star2 {
+    position: absolute;
+				margin: auto;
+				left: 83%;
+        top: 40%;
+				width: 6px;
+				height: 6px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+   .star3 {
+    position: absolute;
+				margin: auto;
+				left: 75%;
+        top: 36%;
+				width: 4px;
+				height: 4px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+    .star4 {
+    position: absolute;
+				margin: auto;
+				left: 38%;
+        top: 80px;
+				width: 4px;
+				height: 4px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+     .star5 {
+    position: absolute;
+				margin: auto;
+				left: 10%;
+        top: 200px;
+				width: 3px;
+				height: 3px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+      .star6 {
+    position: absolute;
+				margin: auto;
+				left: 18%;
+        top: 253px;
+				width: 4px;
+				height: 4px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+    .star7 {
+    position: absolute;
+				margin: auto;
+				left: 25%;
+        top: 150px;
+				width: 4px;
+				height: 4px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+    .star8 {
+    position: absolute;
+				margin: auto;
+				left: 15%;
+        top: 350px;
+				width: 4px;
+				height: 4px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+      .star9 {
+    position: absolute;
+				margin: auto;
+				left: 85%;
+        top: 350px;
+				width: 4px;
+				height: 4px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+   .star10 {
+    position: absolute;
+				margin: auto;
+				left: 85%;
+        top: 140px;
+				width: 3px;
+				height: 3px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+   .star11 {
+    position: absolute;
+				margin: auto;
+				left: 75%;
+        top: 400px;
+				width: 5px;
+				height: 5px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+    .star12 {
+    position: absolute;
+				margin: auto;
+				left: 79%;
+        top: 280px;
+				width: 3px;
+				height: 3px;
+				background-color: var(--star-color);
+				border-radius: 50%;
+     animation-name: starfade;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+  .mouth1 {
+    width: 15px;
+    height: 15px;
+    border: 3px solid var(--bunny-color1);
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    border-top: none;
+    position: absolute;
+    transform: rotate(-25deg);
+    background-color: solid transparent;
+    top: 60%;
+    left: 50%;
+    
+  }
+  .mouth2 {
+     width: 15px;
+    height: 15px;
+    border: 3px solid var(--bunny-color1);
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    border-top: none;
+    position: absolute;
+    transform: rotate(-45deg);
+    background-color: solid transparent;
+    bottom: 30%;
+    right: 120%;
+    
   }
 
 
     .circle {
     position: absolute;
-    width: 400px;
-    height: 400px;
-    top: 33%;
-    border: 2px solid var(--blush-color);
+    width: 500px;
+    height: 500px;
+    top: 25%;
+    border: 6px solid #C1BCF2;
     border-radius: 50%;
 
-    background-color: solid transparent;
+  background-color: var(--day-color);
+  animation-name: day;
+    animation-duration: 8s;
+      animation-iteration-count: infinite;
+}
+  
+  .moon {
+  	position: absolute;
+				margin: auto;
+				left: 45%;
+        top: 20px;
+				width: 80px;
+				height: 80px;
+				background-color: transparent;
+				border-radius: 50%;
+				box-shadow: 25px 10px 0px 0px #FFFFFF;
+     animation-name: moons;
+    animation-duration: 8s;
+      animation-iteration-count: infinite;
+  }
+    .sun {
+  	position: absolute;
+				margin: auto;
+				left: 33%;
+        top: 20px;
+				width: 80px;
+				height: 80px;
+				background-color: #FFFFB3;
+				border-radius: 50%;
+     animation-name: suns;
+    animation-duration: 8s;
+      animation-iteration-count: infinite;
+       box-shadow: 0px 0px 25px #FFFFB3;
+  }
+  
+
+
+
+  @keyframes day {
+    0%   {background-color: var(--day-color);}
+    50%  {background-color: var(--bunny-color1);}
+    100% {background-color: var(--day-color);}
+}
+      
+      @keyframes blinking
+  {
+    0% {height: 26px;}
+    
+    10% {
+       margin-top: 8px;
+  
+    height: 6px;
+    }
+   
+    30%{
+       margin-top: 0px;
+    height: 26px;
+    }
+   
+    100%{
+       height: 26px;
+    }
+   
 
   }
+    @keyframes moons {
+    0%   {top: 300px;}
+    50%  {top: 20px;}
+    100% {top: 300px;}
+}
+  @keyframes suns {
+    0%   {top: 20px;}
+    50%  {top: 300px;}
+    100% {top: 20px;}
+}
+  
+ @keyframes starfade {
+    0%   {background-color: transparent;}
+    50%  {background-color: var(--star-color);}
+    100% {background-color: transparent;}
+}
+  
+ 
+  
+  @keyframes wiggle1{
+    0%
+    {left: 60%;
+     bottom: 50%;
+    }
+    
+    10%
+    {
+      left: 62%;
+     bottom: 49%;
+    }
+
+  20%
+    {
+      left: 60%;
+     bottom: 50%;
+    }
+ 
+  30%
+    {
+      left: 62%;
+     bottom: 49%;
+    }
+    
+  50%
+    {
+      left: 60%;
+     bottom: 50%;
+    }
+  }
+  @keyframes wiggle2{
+    0%
+    {
+      right: 60%;
+     bottom: 50%;
+    }
+    
+    10%
+    {
+      right: 62%;;
+     bottom: 49%;
+    }
+
+  20%
+    {
+    right: 60%;
+     bottom: 50%;
+    }
+ 
+  30%
+    {
+      right: 62%;;
+     bottom: 49%;
+    }
+    
+  50%
+    {
+     right: 60%;
+     bottom: 50%;
+    }
+  }
+  
+  
 
 </style>
+<div class="circle">
+<div class="sun"></div>
+<div class="moon"></div>
+<div class="star1"></div>
+<div class="star2"></div>
+  <div class="star3"></div>
+<div class="star4"></div>
+  <div class="star5"></div>
+<div class="star6"></div>
+  <div class="star7"></div>
+  <div class="star8"></div>
+<div class="star9"></div>
+   <div class="star10"></div>
+<div class="star11"></div>
+   <div class="star12"></div>
+</div>
+
+
+
 <div class="bunny">
   <div class="ear1"></div>
   <div class="ear2"></div>
   <div class="nose"></div>
   <div class="blush1"></div>
   <div class="blush2"></div>
-  <div class="moon"></div>
-
+  <div class="mouth1">
+  <div class="mouth2"></div>
+  </div>
 </div>
-<div class="circle"></div>
